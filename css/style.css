@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--primary);
+    font-family: 'Source Serif 4', sans-serif;
+    user-select: none;
+}
+:root{
+    --light:400;
+    --bold: 700;
+    --primary: #142850;
+    --secondary: #9100ff;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background: white;
+    /* box-shadow: 0px 0px 6px -5px; */
+}
+nav div.logo{  /* Logo */
+    position: absolute;
+    left: 24px;
+}
+nav div a{  /*logo link*/
+    font-size: 2rem;
+    font-weight: var(--bold);
+}
+nav > a { /* Contant and about link */
+    font-size: 1.4rem;
+    margin: 0px 20px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+main{
+    flex-direction: column;
+    background: whitesmoke;
+}
+main iframe{ /*For Youtube Video*/
+    width: 70%;
+    height: 35vw;
+    padding: 20px 0px;
+}
+main a{ /*Make Website btn*/
+    margin-bottom: 20px;
+    background: var(--secondary);
+    padding: 20px;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    color: white !important;
+}
+#features-container{
+    margin: 50px 0px;
+    flex-direction: column;
+}
+#features-h{
+    font-size: 2.5rem;
+}
+ul#features-items{
+    font-size: 1.2rem;
+    flex-direction: column;
+    margin: 20px 0px;
+    align-items: flex-start !important;
+}
+ul#features-items li{
+    margin: 25px 0px;
+}
+#example{
+    background: var(--primary);
+    color: white;
+    height: 230px;
+    font-size: 2rem;
+}
+#chat{
+    position: fixed;
+    top: 380px;
+    right: 35px;
+    padding: 12px 15px;
+    background: var(--secondary);
+    border-radius: 60px 60px 0px 60px;
+}
+#chat div{
+    position: absolute;
+    width: 80px;
+    top: 60px;
+    left: 0px;
+    color: var(--secondary);
+}
+footer{
+    height: 75px;
+    justify-content: space-between !important;
+    padding: 0px 50px;
+}
+#copyright{
+    font-size: 1.2rem;
+}
+div#social-links a {
+    margin: 0px 12px;
+}
